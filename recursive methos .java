@@ -31,10 +31,11 @@ public class Program {
 		int res = factorial(5);
 		System.out.println("factorial is " +res);
 		
+		System.out.println("enter number and power of number");
 		int x = sc.nextInt();
 		int y = sc.nextInt();
 		int power_res = power(x, y);
-		System.out.println("power calculating   " +x+ "^" +y+ "is :"+power_res);
+		System.out.println("power calculating   " +x+ " ^ " +y+ " is : "+power_res);
 	}
 
 }
