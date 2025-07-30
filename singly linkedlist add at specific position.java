@@ -61,8 +61,9 @@ class linkeslist{
 	public void addATpos(int val , int pos) {
 		Node newnode = new Node(val);
 		
-		//case 1 : if user have add element at first position or also head is null
-		if(head == null || pos ==1) {
+		//case 1 : if user have add element at first position or before the 1 (i.e user enter -1 , -3 )
+		//or also head is null
+		if(head == null || pos <= 1) {
 			addfirst(val);
 		}
 		
