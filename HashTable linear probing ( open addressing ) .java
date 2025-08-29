@@ -1,3 +1,5 @@
+// linear probing 
+
 import java.util.Scanner;
 
 class HashTable{
