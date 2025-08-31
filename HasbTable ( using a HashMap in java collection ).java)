@@ -1,0 +1,44 @@
+
+// HashMap<> is most efficient hash table implementation in java collection
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		HashMap<Integer, String> ht = new HashMap<>();	
+		
+		ht.put(89, "v1");
+		ht.put(18, "v2");
+		ht.put(49, "v3");
+		ht.put(58, "v4");
+		ht.put(29, "v5");
+		ht.put(36, "v6");
+		
+		// traverse all entries in map
+		
+		Set<Entry<Integer , String>> entries = ht.entrySet();
+		for(Entry en : entries) {
+			System.out.println(en.getKey()+ " -> " +en.getValue());
+		}
+	
+		// get function to find the key in map
+		System.out.println("enter a key to find : ");
+		int key = sc.nextInt();
+		String value = ht.get(key);
+		if(value == null) {
+			System.out.println("not found");
+		}
+		else {
+			System.out.println("found : " +value);
+		}
+	}
+
+}
